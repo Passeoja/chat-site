@@ -7,22 +7,47 @@
     <link href="style.css" rel="stylesheet">
 
 
-
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Playwrite+VN:wght@100..400&family=Protest+Revolution&display=swap" rel="stylesheet">
 
+
+<!--파비콘-->
+<link rel="icon" href="basic.png" type="image/x-icon">
+
 </head>
 <body>
+    <div id="loading">
+        <div id="content">Basic</div>
+    </div>
+
     <div class="nav">
-        Basic
+        <button class="firstbtn">Basic</button>
         <span class="menu">
         <a href="#">chat</a>
         <a href="#">random_chat</a>
         <a href="#">room</a>
         </span>
+
+        <span class="join"><button onclick="location.href='login.html'">login</button></span>
     </div>
 
-    <h1>Hello, world!</h1>
+    <div class="h1">
+    <h1>Hello, world!
+        <p><em>by passeoja</em></p>
+    </h1>
+    </div>
+
+    <script>
+        // 페이지 로드와 최소 로딩 시간 설정
+        window.addEventListener("load", () => {
+          // 최소 1초 동안 로딩 화면 유지
+          setTimeout(() => {
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("content").style.display = "block";
+          }, 1000); // 1초 (1000ms) 지연
+        });
+      </script>
 </body>
 </html>
