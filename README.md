@@ -1,2 +1,4 @@
 # chat-site
-just chat site
+이상한 채팅 사이트임
+뭔가 잡다한것들 많은데요 그것들 다 파비콘으로 사용 ㄱㄴ합니다.
+login.html은 아직 편집 안함
